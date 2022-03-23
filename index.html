@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Momentum</title>
+    <script defer src="js/greeting.js"></script>
+    <script defer src="js/clock.js"></script>
+    <script defer src="js/quotes.js"></script>
+    <script defer src="js/background.js"></script>
+    <script defer src="js/todo.js"></script>
+    <script defer src="js/weather.js"></script>
+  </head>
+  <body>
+    <div id="before-login" class="hidden">
+      <h1 class="hello-text">Hello🤚🏻, What's your name?</h1>
+      <form>
+        <input id="nameBox" required maxlength="15" type="text" />
+      </form>
+    </div>
+
+    <div id="after-login" class="hidden whole-area">
+      <div class="top-area">
+        <nav><img src="img/menu.png" id="menu" /></nav>
+        <header>
+          <span id="weather-area">
+            <div id="city"></div>
+            <div id="temp"></div>
+            <div id="weather"></div>
+          </span>
+        </header>
+      </div>
+
+      <section class="middle-area">
+        <div id="clock">현재 시간</div>
+        <h1 id="greeting"></h1>
+        <div id="question-area" class="hidden">
+          <div id="todo-q" class="todo-text">
+            What is your main focus for today?
+          </div>
+          <form id="todo-form">
+            <input type="text" required id="input-area" />
+          </form>
+        </div>
+        <div id="todo-area" class="hidden todo-text">Main focus</div>
+        <ul id="todo-list"></ul>
+      </section>
+
+      <footer class="bottom-area">
+        <span
+          ><img
+            src="https://img.icons8.com/external-neu-royyan-wijaya/32/000000/external-configuration-neu-solid-neu-royyan-wijaya.png"
+        /></span>
+        <span id="quote">
+          <div id="quote_text"></div>
+          <div id="quote_author"></div>
+        </span>
+      </footer>
+    </div>
+  </body>
+</html>
